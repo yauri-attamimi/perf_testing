@@ -1,0 +1,9 @@
+---
+# Runtime Settings
+
+host: https://stage.api.moove.link
+users: 20
+spawn-rate: 10
+run-time: 10s
+headless: true
+only-summary: true
