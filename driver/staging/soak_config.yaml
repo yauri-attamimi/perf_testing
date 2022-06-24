@@ -1,0 +1,10 @@
+---
+# Runtime Settings
+# This baseline soak (endurance) testing expects 1,000 VUs after an hour with each user stays for 30 minutes.
+
+host: https://stage.api.moove.link
+users: 500 # 1,000 peak hourly visit * 30 minutes average visit for each user / 60 m
+spawn-rate: 5
+run-time: 30m
+headless: true
+only-summary: true
