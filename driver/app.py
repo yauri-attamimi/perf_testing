@@ -41,21 +41,6 @@ class DriverApp(SequentialTaskSet):
                 self.access_token = response.json().get("access_token")
                 print(self.access_token)
                 response.success()
-            elif response.status_code == 400:
-                error_msg = response.json().get("error")
-                print(error_msg)
-                self.reset_driver_data()
-                response.success()
-            elif response.status_code == 401:
-                error_msg = response.json().get("error")
-                print(error_msg)
-                self.reset_driver_data()
-                response.success()
-            elif response.status_code == 403:
-                error_msg = response.json().get("error")
-                print(error_msg)
-                self.reset_driver_data()
-                response.success()
             else:
                 self.reset_driver_data()
                 if "error" in response.json():
