@@ -1,9 +1,10 @@
 ---
 # Runtime Settings
+# This baseline spike testing expects 1,000 VUs after an hour with a hatch-rate of 10 Vus / second.
 
 host: https://stage.api.moove.link
-users: 20
+users: 100 # 1,000 peak hourly visit * 6 minutes average visit for each user / 60 m
 spawn-rate: 10
-run-time: 10s
+run-time: 1m
 headless: true
 only-summary: true

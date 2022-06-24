@@ -1,9 +1,9 @@
 ---
 # Runtime Settings
-# This baseline load testing expects 1,200 VUs after 1 hour
+# This baseline load testing expects 200 VUs after an hour
 
 host: https://stage.api.moove.link
-users: 20 # 200 peak hourly visit * 6 minutes average visit for each user / 60 seconds
+users: 20 # 200 peak hourly visit * 6 minutes average visit for each user / 60 m
 spawn-rate: 1
 run-time: 1m
 headless: true
