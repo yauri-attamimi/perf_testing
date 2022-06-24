@@ -1,0 +1,10 @@
+---
+# Runtime Settings
+# This baseline stress testing expects 6,000 VUs after 1 hour
+
+host: https://stage.api.moove.link
+users: 100 # 1,000 peak hourly visit * 6 mins for average visit for each user / 60 seconds
+spawn-rate: 1
+run-time: 1m
+headless: true
+only-summary: true
